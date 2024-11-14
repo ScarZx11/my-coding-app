@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Online Web Compiler with GDB using WebSocket
+This project is an online web-based compiler powered by GDB (GNU Debugger) and WebSocket technology. It enables users to compile, debug, and run code directly from their web browsers, providing a seamless coding experience with real-time interaction between the client and server.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Code Compilation and Execution: Allows users to compile and execute code in various programming languages directly in the browser.
+Real-Time Debugging: Uses GDB to provide step-by-step debugging, breakpoints, and error inspection.
+WebSocket-Based Communication: WebSocket facilitates instant, bidirectional communication between the client and server, ensuring smooth and efficient debugging sessions.
+User-Friendly Interface: Interactive editor and console output for easy use and real-time feedback.
+Installation
+Clone the repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/yourusername/online-web-compiler.git
+cd online-web-compiler
+Install Dependencies:
 
-In the project directory, you can run:
+bash
+Copy code
+npm install
+Run the Server: Start the WebSocket and GDB server.
 
-### `npm start`
+bash
+Copy code
+node server.js
+Launch the Client:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+Usage
+Open your browser and navigate to http://localhost:3000.
+Enter your code in the editor, select the language, and click Run to compile and execute.
+For debugging, set breakpoints and interact with GDB commands.
+Project Structure
+client/: Contains the frontend code (React-based).
+server/: Manages WebSocket connections and GDB processes.
+Dependencies
+GDB: GNU Debugger for debugging code.
+WebSocket: Ensures instant, two-way data transfer between the client and server.
+Express: Backend framework for handling HTTP requests.
+React: Frontend library for creating the user interface.
+Contributing
+Fork the repository.
+Create a new branch for your feature.
+Commit your changes.
+Submit a pull request.
+License
+This project is licensed under the MIT License.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
